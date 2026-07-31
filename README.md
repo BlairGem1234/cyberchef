@@ -20,6 +20,34 @@ Cryptographic operations in CyberChef should not be relied upon to provide secur
 
 [A live demo can be found here][1] - have fun!
 
+## Running Locally with npm
+
+**Prerequisites**
+
+- [Node.js](https://nodejs.org/) **v24** (see `.nvmrc`)
+- npm (ships with Node)
+
+```bash
+# optional: use the repo's Node version
+nvm install
+nvm use
+
+npm ci
+npm start
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
+Useful scripts:
+
+| Command | What it does |
+| --- | --- |
+| `npm start` | Dev server with hot reload (Grunt + webpack-dev-server) |
+| `npm run build` | Production static build under `build/prod` |
+| `npm test` | Node + operation tests |
+| `npm run lint` | ESLint via Grunt |
+| `npm run repl` | Interactive Node REPL for operations |
+
 ## Running Locally with Docker
 
 **Prerequisites**
